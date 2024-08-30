@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Analyze an Image</h2>
+
+<form asp-controller="Home" asp-action="AnalyzeImage" method="post">
+    <div>
+        <label>Enter an image URL:</label>
+        <input type="text" name="imageUrl" />
+    </div>
+    <div>
+        <input type="submit" value="Analyze" />
+    </div>
+</form>

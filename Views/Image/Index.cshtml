@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Image Analysis";
+}
+
+<h2>Analyze an Image</h2>
+
+<form asp-controller="Image" asp-action="AnalyzeImage" method="post">
+    <div>
+        <label>Enter an image URL:</label>
+        <input type="text" name="imageUrl" />
+    </div>
+    <div>
+        <input type="submit" value="Analyze" />
+    </div>
+</form>
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <div style="color: red;">
+        @ViewBag.ErrorMessage
+    </div>
+}
