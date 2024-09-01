@@ -8,7 +8,6 @@
         public string PredictionKey { get; set; }
         public string ProjectId { get; set; }
         public string PublishedModelName { get; set; }
-        public string SubscriptionKey { get; set; }
-        public string Endpoint { get; set; }
+       
     }
 }

@@ -8,7 +8,7 @@
 
 @if (!string.IsNullOrEmpty(Model.ImageUrl))
 {
-    <img src="@Model.ImageUrl" alt="Analyzed Image" style="max-width: 100%; height: auto;" />
+    <img src="@Model.ImageUrl" alt="Analyzed Image" style="max-width: auto; height: 300px ;" />
 }
 
 @if (!string.IsNullOrEmpty(Model.Description))
@@ -16,10 +16,5 @@
     <p><strong>Description:</strong> @Model.Description</p>
 }
 
-<h3>Tags:</h3>
-<ul>
-    @foreach (var tag in Model.Tags)
-    {
-        <li>@tag</li>
-    }
-</ul>
+
+<a href="/" class="btn btn-lg btn-outline-dark">Go back</a>
